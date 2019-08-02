@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:background="#00f"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/ivProfileUrl"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="8dp"
+        tools:srcCompat="@tools:sample/avatars[0]" />
+
+    <TextView
+        android:id="@+id/tvScreenName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:textColor="@android:color/white"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="8dp"
+        android:layout_toEndOf="@+id/ivProfileUrl"
+        android:text="TextView"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvTimeStamp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="5dp"
+        android:text="TextView"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/tvBody"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="14dp"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="22dp"
+        android:layout_toEndOf="@+id/ivProfileUrl"
+        android:autoLink="all"
+        android:linksClickable="true"
+        android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry.k"
+        android:textColorLink="@android:color/holo_blue_bright" />
+
+
+</RelativeLayout>
